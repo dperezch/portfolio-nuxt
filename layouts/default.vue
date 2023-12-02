@@ -1,6 +1,6 @@
 <template>
     <div>
-        <DarkModeButton />
+        <Navbar />
         <slot />
     </div>
 </template>

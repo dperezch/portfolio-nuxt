@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen flex justify-end">
-        <UButton class="m-3" :icon="isDark ? 'i-fontisto-night-clear' : 'i-fontisto-lightbulb'" size="lg"
+        <UButton class="m-3" :icon="isDark ? 'i-fontisto-lightbulb' : 'i-fontisto-night-clear'" size="lg"
             color="fountain"
             @click="isDark = !isDark">
         </UButton>

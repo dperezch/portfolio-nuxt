@@ -15,6 +15,11 @@
     "nuxt": "^3.7.4"
   },
   "dependencies": {
-    "@iconify-json/fontisto": "^1.1.6"
+    "@iconify-json/fontisto": "^1.1.6",
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }
