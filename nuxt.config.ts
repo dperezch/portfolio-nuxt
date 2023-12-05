@@ -4,5 +4,8 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt',"@nuxt/ui", ],
   ui: {
     icons: ['fontisto']
+  },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
   }
 })
