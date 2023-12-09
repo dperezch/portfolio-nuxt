@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="dark:bg-fountain-950 bg-fountain-50 border-b-2 dark:border-fountain-600 border-fountain-400"
+    class="fixed w-screen dark:bg-fountain-950 bg-fountain-50 border-b-2 dark:border-fountain-600 border-fountain-400"
   >
     <!-- DESKTOP -->
     <div class="px-2 sm:px-6 lg:px-8">
@@ -71,8 +71,8 @@
                 v-for="(link, index) in navbarStore.links"
                 :key="index"
                 :to="link.href"
-                class="text-fountain-950 hover:text-fountain-50 dark:text-fountain-200 hover:bg-fountain-600 dark:hover:bg-fountain-300 dark:hover:text-fountain-950 rounded-md px-3 py-2 font-medium"
-                exactActiveClass="bg-gradient-to-r from-fountain-600 to-fountain-800 dark:bg-gradient-to-r dark:from-fountain-400 dark:to-fountain-600 text-fountain-100 dark:text-fountain-950"
+                exactActiveClass="text-fountain-100 dark:text-fountain-950 bg-gradient-to-r from-fountain-600 to-fountain-800 dark:bg-gradient-to-r dark:from-fountain-400 dark:to-fountain-600 "
+                class="hover:text-fountain-50 dark:text-fountain-200 hover:bg-fountain-600 dark:hover:bg-fountain-300 dark:hover:text-fountain-950 rounded-md px-3 py-2 font-medium"
                 aria-current="page"
               >
                 {{ link.name }}

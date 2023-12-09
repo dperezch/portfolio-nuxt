@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1 class="text-4xl">PORTAFOLIO</h1>
-    </div>
+    <main class="p-7">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">We invest in the world’s potential</h1>
+    </main>
 </template>
 
 <script setup lang="ts">
