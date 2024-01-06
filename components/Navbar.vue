@@ -1,11 +1,11 @@
 <template>
   <nav
-    class="fixed w-screen dark:bg-fountain-950 bg-fountain-50 border-b-2 dark:border-fountain-600 border-fountain-400"
+    class="fixed z-50 w-screen dark:bg-fountain-950 bg-fountain-50 border-b dark:border-fountain-600 border-fountain-400"
   >
     <!-- DESKTOP -->
     <div class="px-2 sm:px-6 lg:px-8">
       <div
-        class="relative flex h-12 md:h-16 lg:h-20 items-center justify-between"
+        class="relative flex h-12 md:h-16 lg:h-16 items-center justify-between"
       >
         <!-- BOTÓN MENU MOBILE -->
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -71,8 +71,8 @@
                 v-for="(link, index) in navbarStore.links"
                 :key="index"
                 :to="link.href"
-                exactActiveClass="text-fountain-100 dark:text-fountain-950 bg-gradient-to-r from-fountain-600 to-fountain-800 dark:bg-gradient-to-r dark:from-fountain-400 dark:to-fountain-600 "
-                class="hover:text-fountain-50 dark:text-fountain-200 hover:bg-fountain-600 dark:hover:bg-fountain-300 dark:hover:text-fountain-950 rounded-md px-3 py-2 font-medium"
+                exactActiveClass="text-fountain-100 dark:text-gray-950 bg-gradient-to-r from-fountain-600 to-fountain-800 dark:bg-gradient-to-r dark:from-fountain-400 dark:to-fountain-600 "
+                class="hover:text-fountain-50 dark:text-fountain-200 hover:bg-fountain-600 dark:hover:bg-fountain-300 dark:hover:text-fountain-950 rounded-md px-3 py-2 font-medium text-sm"
                 aria-current="page"
               >
                 {{ link.name }}

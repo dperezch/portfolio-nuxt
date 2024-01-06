@@ -17,10 +17,6 @@ export const useNavbarStore = defineStore('navbar', {
                 name: "About Me",
                 href: "/about",
             },
-            {
-                name: "Curriculum",
-                href: "/curriculum",
-            },
         ]
     }),
     getters: {},

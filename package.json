@@ -17,6 +17,8 @@
   "dependencies": {
     "@iconify-json/fontisto": "^1.1.6",
     "@pinia/nuxt": "^0.5.1",
+    "flowbite": "^2.2.1",
+    "flowbite-vue": "^0.1.2",
     "pinia": "^2.1.7"
   },
   "overrides": {

@@ -1,8 +1,12 @@
 import type { Config } from "tailwindcss";
-import defaultTheme from 'tailwindcss/defaultTheme'
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default <Partial<Config>>{
-  content: ["docs/content/**/*.md"],
+  content: [
+    "docs/content/**/*.md",
+    "node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx,vue}",
+    "node_modules/flowbite/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -22,4 +26,7 @@ export default <Partial<Config>>{
       },
     },
   },
+  plugins: [
+    require('flowbite/plugin')
+],
 };
