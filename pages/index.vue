@@ -29,6 +29,8 @@
             :color="isDark ? 'sky' : 'fountain'"
             square
             variant="link"
+            to="https://github.com/dperezch"
+            target="_blank"
           />
 
           <UButton
@@ -38,6 +40,7 @@
             :color="isDark ? 'sky' : 'fountain'"
             square
             variant="link"
+            to="mailto:davarmando@gmail.com"
           />
 
           <UButton
@@ -47,6 +50,8 @@
             :color="isDark ? 'sky' : 'fountain'"
             square
             variant="link"
+            to="https://api.whatsapp.com/send?phone=56950627883&text=Hola,%20te%20contacto%20desde%20tu%20portafolio"
+            target="_blank"
           />
 
           <UButton
@@ -56,6 +61,8 @@
             :color="isDark ? 'sky' : 'fountain'"
             square
             variant="link"
+            to="https://www.linkedin.com/in/dperezch/"
+            target="_blank"
           />
         </section>
       </div>

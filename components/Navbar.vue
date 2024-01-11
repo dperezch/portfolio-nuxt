@@ -88,7 +88,7 @@
           <!-- DARK MODE BUTTON -->
           <button
             type="button"
-            class="relative rounded-full dark:bg-fountain-950 bg-fountain-50 p-1 dark:text-fountain-400 text-fountain-900 dark:hover:text-white hover:text-black"
+            class="relative rounded-full dark:bg-fountain-950 bg-fountain-50 dark:text-fountain-400 text-fountain-900 dark:hover:text-white hover:text-black"
             @click="isDark = !isDark"
           >
             <UIcon
