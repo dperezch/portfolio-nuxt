@@ -38,7 +38,7 @@
             Credly
           </a>
           <a class="cursor-pointer items-center px-4 py-2 mx-5 text-sm font-medium text-center border border-fountain-700 text-fountain-700 bg-white rounded-lg hover:bg-fountain-50 dark:text-fountain-300 dark:bg-black  dark:border-fountain-300 dark:hover:bg-fountain-950"
-          href="CV_WebDev_David_Perez.pdf" 
+          href="David_CV_FullStack.pdf" 
           download
           >
             Mi CV
