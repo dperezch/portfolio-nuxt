@@ -1,7 +1,7 @@
 <template>
   <main class="fixed z-0 flex flex-col justify-between w-full h-full">
     <div></div>
-    <div class="flex row items-center justify-around">
+    <div class="flex items-center justify-around lg:flex-row flex-col">
       <div class="m-6">
         <section class="text-gray-700 dark:text-slate-300">
           <h1

@@ -1,34 +1,34 @@
 <template>
   <div>
-    <div class="flex row">
-      <div class="h-screen w-1/4 flex justify-center items-center">
-        <div class="flex flex-col">
+    <div class="flex lg:flex-row flex-col max-md:pt-11">
+      <div class="lg:h-screen lg:w-1/4 flex justify-center items-center">
+        <div class="flex lg:flex-col">
           <button
-            class="my-5 text-2xl font-semibold transition-all duration-300 ease-in-out"
-            :class="front === true ? 'border-b-8 border-fountain-700' : ''"
+            class="my-5 lg:text-xl text-sm font-semibold transition-all duration-200 ease-in-out text-left pr-5"
+            :class="front === true ? 'lg:border-r-8 border-fountain-700' : 'text-slate-500'"
             @click="change('front')"
           >
             Front-end
           </button>
           <button
-            class="my-5 text-2xl font-semibold transition-all duration-300 ease-in-out"
-            :class="back === true ? 'border-b-8 border-purple-700' : ''"
+            class="my-5 lg:text-xl text-sm font-semibold transition-all duration-200 ease-in-out text-left pr-5"
+            :class="back === true ? 'lg:border-r-8 border-purple-700' : 'text-slate-500'"
             @click="change('back')"
           >
             Back-end
           </button>
 
           <button
-            class="my-5 text-2xl font-semibold transition-all duration-300 ease-in-out"
-            :class="cloud === true ? 'border-b-8 border-amber-600' : ''"
+            class="my-5 lg:text-xl text-sm font-semibold transition-all duration-200 ease-in-out text-left pr-5"
+            :class="cloud === true ? 'lg:border-r-8 border-amber-600' : 'text-slate-500'"
             @click="change('cloud')"
           >
             Cloud Computing
           </button>
 
           <button
-            class="my-5 text-2xl font-semibold transition-all duration-300 ease-in-out"
-            :class="devs === true ? 'border-b-8 border-cyan-600' : ''"
+            class="my-5 lg:text-xl text-sm font-semibold transition-all duration-200 ease-in-out text-left pr-5"
+            :class="devs === true ? 'lg:border-r-8 border-cyan-600' : 'text-slate-500'"
             @click="change('devs')"
           >
             Dev Tools
@@ -42,18 +42,18 @@
       <!-- FRONT -->
       <div
         v-show="front"
-        class="h-screen w-3/4 flex justify-center items-center flex-col"
+        class="lg:h-screen lg:w-3/4 flex justify-center items-center flex-col"
       >
         <h1
-          class="mt-[-15rem] font-['Oswald'] text-[400px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-teal-600 to-transparent"
+          class="lg:mt-[-15rem] mt-[-1rem] font-['Oswald'] lg:text-[400px] text-[140px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-teal-600 to-transparent"
         >
           FRONT
         </h1>
-        <div class="mt-[-20rem] flex row flex-wrap">
+        <div class="lg:mt-[-20rem] mt-[-8rem] flex lg:flex-row flex-col flex-wrap">
           <h1
             v-for="(skill, index) in skillStore.front"
             :key="index"
-            class="text-4xl font-bold my-4 tracking-widest m-7"
+            class="lg:text-4xl font-bold my-4 tracking-widest m-7"
             :class="skill.font"
           >
             {{ skill.name }}
@@ -64,18 +64,18 @@
       <!-- BACK -->
       <div
         v-show="back"
-        class="h-screen w-3/4 flex justify-center items-center flex-col"
+        class="lg:h-screen lg:w-3/4 flex justify-center items-center flex-col"
       >
         <h1
-          class="mt-[-15rem] font-['Oswald'] text-[400px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-purple-900 to-transparent"
+          class="lg:mt-[-15rem] mt-[-1rem] font-['Oswald'] lg:text-[400px] text-[140px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-purple-900 to-transparent"
         >
           BACK
         </h1>
-        <div class="mt-[-20rem] flex row flex-wrap">
+        <div class="lg:mt-[-20rem] mt-[-8rem] flex lg:flex-row flex-col flex-wrap">
           <h1
             v-for="(skill, index) in skillStore.back"
             :key="index"
-            class="text-4xl font-bold my-4 tracking-widest m-7"
+            class="lg:text-4xl font-bold my-4 tracking-widest m-7"
           >
             {{ skill.name }}
           </h1>
@@ -85,18 +85,18 @@
       <!-- CLOUD -->
       <div
         v-show="cloud"
-        class="h-screen w-3/4 flex justify-center items-center flex-col"
+        class="lg:h-screen lg:w-3/4 flex justify-center items-center flex-col"
       >
         <h1
-          class="mt-[-15rem] font-['Oswald'] text-[400px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-amber-600 to-transparent"
+          class="lg:mt-[-15rem] mt-[-1rem] font-['Oswald'] lg:text-[400px] text-[140px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-amber-600 to-transparent"
         >
           CLOUD
         </h1>
-        <div class="mt-[-20rem] flex row flex-wrap">
+        <div class="lg:mt-[-20rem] mt-[-8rem] flex lg:flex-row flex-col flex-wrap">
           <h1
             v-for="(skill, index) in skillStore.cloud"
             :key="index"
-            class="text-4xl font-bold my-4 tracking-widest m-7"
+            class="lg:text-4xl font-bold my-4 tracking-widest m-7"
           >
             {{ skill.name }}
           </h1>
@@ -106,18 +106,18 @@
       <!-- DEV -->
       <div
         v-if="devs"
-        class="h-screen w-3/4 flex justify-center items-center flex-col"
+        class="lg:h-screen lg:w-3/4 flex justify-center items-center flex-col"
       >
         <h1
-          class="mt-[-15rem] font-['Oswald'] text-[400px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-cyan-600 to-transparent"
+          class="lg:mt-[-15rem] mt-[-1rem] font-['Oswald'] lg:text-[400px] text-[140px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-cyan-600 to-transparent"
         >
           TOOLS
         </h1>
-        <div class="mt-[-20rem] flex row flex-wrap">
+        <div class="lg:mt-[-20rem] mt-[-8rem] flex lg:flex-row flex-col flex-wrap">
           <h1
             v-for="(skill, index) in skillStore.devs"
             :key="index"
-            class="text-4xl font-bold my-4 tracking-widest m-7"
+            class="lg:text-4xl font-bold my-4 tracking-widest m-7"
           >
             {{ skill.name }}
           </h1>

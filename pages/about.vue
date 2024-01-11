@@ -1,6 +1,6 @@
 <template>
-  <main class="fixed z-0 flex row items-center justify-around w-full h-full">
-    <div class="w-full max-w-md shadow-xl bg-fountain-50 border border-fountain-400 rounded-lg dark:bg-fountain-950 dark:border-fountain-600">
+  <main class="lg:fixed z-0 flex row items-center justify-around w-full h-full">
+    <div class="max-md:pt-10 w-full max-w-md shadow-xl bg-fountain-50 border border-fountain-400 rounded-lg dark:bg-fountain-950 dark:border-fountain-600">
       <section class="flex flex-col justify-center items-center p-6">
         <UAvatar
           class="my-3"
